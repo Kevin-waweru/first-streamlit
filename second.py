@@ -7,7 +7,7 @@ csvfile=st.file_uploader("Upload csv file",'csv')
 if csvfile is  None:
     st.write("file uploaded...")
 
-    df=pd.read_csv('london')
+    df=pd.read_csv('https://github.com/Kevin-waweru/first-streamlit/blob/main/second.py')
 
     st.subheader("data preview")
     st.write(df.head())
