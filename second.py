@@ -6,7 +6,7 @@ import io
 st.title("data visualization")
 csvfile=st.file_uploader("Upload csv file",'csv')
 
-if csvfile is NOT  None:
+if csvfile is not None:
     st.write("file uploaded...")
     
 
