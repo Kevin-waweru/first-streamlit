@@ -7,7 +7,7 @@ csvfile=st.file_uploader("Upload csv file",'csv')
 
 if csvfile is  None:
     st.write("file uploaded...")
-    response.get("https://github.com/Kevin-waweru/first-streamlit/blob/main/second.py")
+    response=requests.get("https://github.com/Kevin-waweru/first-streamlit/blob/main/second.py")
     csv_content = response.content.decode('utf-8')
     df=pd.read_csv(pd.compat.StringIO(csv_content))
 
