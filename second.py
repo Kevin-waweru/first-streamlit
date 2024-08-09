@@ -8,7 +8,7 @@ csvfile=st.file_uploader("Upload csv file",'csv')
 
 if csvfile is  None:
     st.write("file uploaded...")
-    repo_url = "https://github.com/Kevin-waweru/first-streamlit/edit/main/second.py"
+    repo_url = "second.py"
 
     response = requests.get(repo_url)
     csv_content = response.content.decode('utf-8')
