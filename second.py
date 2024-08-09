@@ -15,7 +15,7 @@ if csvfile is  None:
      st.write(df)
      st.line_chart(df)
     except pd.errors.ParserError as e:
-    st.error(f"Failed to parse CSV file: {e}")
+     st.error(f"Failed to parse CSV file: {e}")
 
     st.subheader("data preview")
     st.write(df.head())
