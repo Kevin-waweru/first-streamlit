@@ -9,7 +9,7 @@ csvfile=st.file_uploader("Upload csv file",'csv')
 if csvfile is not None:
     st.write("file uploaded...")
     
-
+    df=pd.read_csv(csvfile)
     st.subheader("data preview")
     st.write(df.head())
     st.header("data summary")
